@@ -3,8 +3,12 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
-def hello_praveen():
-    return render_template('home.html')
+def home():
+    return render_template('profile.html')
+
+@app.route("/profile")
+def profile():
+    return render_template('profile.html')
 
 if __name__ == "__main__":
   app.run(host = "0.0.0.0", debug = True)

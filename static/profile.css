@@ -1,0 +1,83 @@
+.title{
+  text-decoration: underline;
+  text-shadow: 10px;
+  font-size: x-large;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin-left :500px;
+}
+.hidden {
+  display: none;
+}
+
+.bg {
+  background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+}
+
+
+.tabs {
+  background-color: blue; /* Light gray background */
+  padding: 16px;
+  border-radius: 8px;
+  margin-left :150px;
+  margin-right: 150px;
+  margin-bottom: 0px;
+}
+
+.tab-button {
+  background-color: #e2e8f0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom:0px;
+}
+
+.tab-button:hover {
+  background-color: #cbd5e1;
+}
+
+.tab-content {
+  margin-left:150px;
+  margin-right: 150px;
+  margin-top:0px;
+  padding :20px;
+  border: 3px solid blue;
+  border-radius:5px;
+  background-color:white;
+}
+.input-field {
+  border: 1px solid #d1d5db;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.edit-button {
+  background-color: #10b981;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #ef4444;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}

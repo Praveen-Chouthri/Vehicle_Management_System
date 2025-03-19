@@ -1,0 +1,200 @@
+h1 {
+
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-decoration: underline;
+      text-shadow: 10px;
+      font-size: xx-large;
+      text-align: center;
+      font-size: 40px;
+      color: darkcyan;
+  }
+
+  #bg {
+      background-image: url('https://i.imgur.com/oGXftQF.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      padding: 0px;
+      margin: 0px;
+  }
+
+  #logo {
+      outline: 3px solid black;
+      margin: 0px;
+      padding: 0%;
+      height: 62px;
+      width: 62px;
+      border-radius: 50%;
+      /* Makes it circular */
+      border: 2px solid goldenrod;
+      cursor: pointer;
+  }
+
+  #lo {
+      padding: 0px;
+      margin: 0px;
+  }
+
+  #navbar {
+      position: relative;
+      display: inline-block;
+      height: 62px;
+      padding: 15px;
+      cursor: pointer;
+  }
+
+  #signup {
+      color: gold;
+  }
+
+  .signup {
+      position: absolute;
+      height: 40px;
+      width: 80px;
+      right: 100px;
+      top: 25px;
+      background-color: gold;
+      color: black;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .signup:hover {
+      background-color: goldenrod;
+      transform: scale(1.1);
+  }
+
+  .login {
+      height: 40px;
+      width: 80px;
+      position: absolute;
+      right: 200px;
+      top: 25px;
+      background-color: gold;
+      color: black;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .login:hover {
+      background-color: goldenrod;
+      transform: scale(1.1);
+  }
+
+  #lo {
+      display: flex;
+  }
+
+  #title {
+      height: 62px;
+  }
+
+  .dropdownbtn {
+      outline: 3px;
+      height: 62px;
+      width: 62px;
+  }
+
+  .imgddcontent {
+      display: none;
+      position: absolute;
+      left: 60px;
+      transform: translateX(-50%);
+      top: 110%;
+      /* Places it below the image */
+      background-color: darkcyan;
+      min-width: 120px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+
+      z-index: 10;
+      text-align: center;
+
+  }
+
+  /* Dropdown links */
+  .imgddcontent a {
+      display: block;
+      color: ivory;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 14px;
+
+  }
+
+  /* Hover effect for links */
+  .imgddcontent a:hover {
+      background-color: lightgray;
+  }
+
+  /* Show dropdown on hover */
+  .navbar:hover .imgddcontent,
+  .navbar:focus-within .imgddcontent {
+      display: block;
+  }
+
+ /* Popup container */
+ .popup {
+     display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 300px;
+     background-color: gray;
+     padding: 20px;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+     border-radius: 5px;
+     z-index: 1000;
+     text-align: center;
+ }
+
+ /* Popup Content Box */
+ .popup-content {
+     position: relative;
+     width: 100%;
+ }
+
+ /* Close Button */
+ .close {
+     position: absolute;
+     top: 10px;
+     right: 15px;
+     font-size: 30px;
+     cursor: pointer;
+     color: red;
+ }
+
+ /* Input Fields */
+ .popup input {
+     width: 80%;
+     padding: 8px;
+     margin: 10px 0;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+ }
+
+ /* Submit Button */
+ .popup-btn {
+     width: 100%;
+     background-color: blue;
+     color: white;
+     padding: 10px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .popup label {
+     font-weight: bold;
+     display: block;
+     text-align: left;
+     margin-top: 5px;
+ }
+
+ .popup-btn:hover {
+     background-color: navy;
+ }
+
+ .fp{
+     color: white; 
+ }

@@ -1,0 +1,282 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href = "{{ url_for('static', filename='profile.css') }}">
+   
+    
+</head>
+<body class="bg-white">
+    <div class="flex flex-col h-screen">
+        <!-- Header 
+        <div class="header">
+            <div class="relative">
+                <img alt="Company Logo" class="logo" id="logoDropdownButton" src="https://placehold.co/50x50"/>
+                <div class="dropdown hidden" id="logoDropdown">
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <div class="relative">
+                        <button class="dropdown-item" id="catalogueDropdownButton">Catalogue</button>
+                        <div class="dropdown hidden left-full top-0 mt-2" id="catalogueDropdown">
+                            <a class="dropdown-item" href="#">Cycle</a>
+                            <a class="dropdown-item" href="#">Car</a>
+                            <a class="dropdown-item" href="#">Bike</a>
+                            <a class="dropdown-item" href="#">Truck</a>
+                        </div>
+                    </div>
+                    <a class="dropdown-item" href="#">FAQ</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="profile-button" id="profileDropdownButton">
+                    <span class="mr-2">PROFILE</span>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="dropdown hidden" id="profileDropdown">
+                    <a class="dropdown-item" href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="flex flex-1">
+            <!-- Sidebar --
+            <div class="sidebar">
+                <div class="sidebar-item">
+                    <button class="w-full text-left">ACCOUNT</button>
+                </div>
+                <div class="sidebar-item">
+                    <button class="w-full text-left">RENTED VEHICLES</button>
+                </div>
+                <div class="sidebar-item">
+                    <button class="w-full text-left">TRANSACTIONS</button>
+                </div>
+                <div class="p-4">
+                    <button class="w-full text-left">RENT A VEHICLE</button>
+                </div>
+            </div>
+            <!-- Main Area --
+            <div class="flex-1 p-4">
+                <!-- Content goes here --
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('profileDropdownButton').addEventListener('click', function() {
+            document.getElementById('profileDropdown').classList.toggle('hidden');
+        });
+
+        document.getElementById('logoDropdownButton').addEventListener('click', function() {
+            document.getElementById('logoDropdown').classList.toggle('hidden');
+        });
+
+        document.getElementById('catalogueDropdownButton').addEventListener('click', function() {
+            document.getElementById('catalogueDropdown').classList.toggle('hidden');
+        });
+
+        // Close dropdowns if clicked outside
+        window.addEventListener('click', function(e) {
+            if (!document.getElementById('profileDropdownButton').contains(e.target)) {
+                document.getElementById('profileDropdown').classList.add('hidden');
+            }
+            if (!document.getElementById('logoDropdownButton').contains(e.target)) {
+                document.getElementById('logoDropdown').classList.add('hidden');
+                document.getElementById('catalogueDropdown').classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html> -->
+
+
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>User Account</title>
+                    <script src="https://cdn.tailwindcss.com"></script>
+                    
+                    <style>
+                        .title{
+                            text-decoration: underline;
+                            text-shadow: 10px;
+                            font-size: x-large;
+                            text-align: center;
+                            font-size: 40px;
+                            color: white;
+                            margin-left :500px;
+                        }
+                        .hidden {
+                            display: none;
+                        }
+
+                        .bg {
+                            background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                            background-size: cover;
+                        }
+                        
+
+                        .tabs {
+                            background-color: blue; /* Light gray background */
+                            padding: 16px;
+                            border-radius: 8px;
+                            margin-left :150px;
+                            margin-right: 150px;
+                            margin-bottom: 0px;
+                        }
+
+                        .tab-button {
+                            background-color: #e2e8f0;
+                            padding: 10px 20px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            margin-bottom:0px;
+                        }
+
+                        .tab-button:hover {
+                            background-color: #cbd5e1;
+                        }
+
+                        .tab-content {
+                            margin-left:150px;
+                            margin-right: 150px;
+                            margin-top:0px;
+                            padding :20px;
+                            border: 3px solid blue;
+                            border-radius:5px;
+                            background-color:white;
+                        }
+                        .input-field {
+                            border: 1px solid #d1d5db;
+                            padding: 10px;
+                            width: 100%;
+                            border-radius: 5px;
+                        }
+
+                        .edit-button {
+                            background-color: #10b981;
+                            color: white;
+                            padding: 10px 20px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+
+                        .cancel-button {
+                            background-color: #ef4444;
+                            color: white;
+                            padding: 10px 20px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+
+                        .save-button {
+                            background-color: #3b82f6;
+                            color: white;
+                            padding: 10px 20px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+
+                        button:hover {
+                            opacity: 0.8;
+                        }
+                        
+
+                    </style>
+                </head>
+                <body class="bg p-5">
+                    <div class="container mx-auto">
+                        <div class="flex justify-between items-center mb-4">
+                            <h1 class="title text-2xl font-bold">Dɾιʋҽ ɯԋҽҽʅȥ</h1>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded">Profile</button>
+                        </div>
+                        <div class="tabs flex justify-center space-x-4 mb-4">
+                            <button id="accountTab" class="tab-button">Account</button>
+                            <button id="rentedVehicleTab" class="tab-button">Rented Vehicle</button>
+                            <button id="vehiclesTab" class="tab-button">Vehicles</button>
+                        </div>
+                        <div id="accountDetails" class="tab-content">
+                            <div class="mb-4">
+                                <label>Name:</label>
+                                <input type="text" id="name" class="input-field" disabled>
+                            </div>
+                            <div class="mb-4">
+                                <label>Age:</label>
+                                <input type="text" id="age" class="input-field" disabled>
+                            </div>
+                            <div class="mb-4">
+                                <label>Driving ID:</label>
+                                <input type="text" id="drivingId" class="input-field" disabled>
+                            </div>
+                            <div class="mb-4">
+                                <label>Phone:</label>
+                                <input type="text" id="phone" class="input-field" disabled>
+                            </div>
+                            <div class="mb-4">
+                                <label>Email ID:</label>
+                                <input type="text" id="email" class="input-field" disabled>
+                            </div>
+                            <button id="editButton" class="edit-button">Edit</button>
+                            <div id="editControls" class="hidden">
+                                <button id="cancelButton" class="cancel-button">Cancel</button>
+                                <button id="saveButton" class="save-button">Save</button>
+                            </div>
+                        </div>
+                        <div id="rentedVehicleDetails" class="tab-content hidden">
+                            <p>Rented Vehicle details will be displayed here.</p>
+                        </div>
+                        <div id="vehiclesDetails" class="tab-content hidden">
+                            <p>Vehicles details will be displayed here.</p>
+                        </div>
+                    </div>
+                    <script>
+                        const accountTab = document.getElementById('accountTab');
+                        const rentedVehicleTab = document.getElementById('rentedVehicleTab');
+                        const vehiclesTab = document.getElementById('vehiclesTab');
+                        const accountDetails = document.getElementById('accountDetails');
+                        const rentedVehicleDetails = document.getElementById('rentedVehicleDetails');
+                        const vehiclesDetails = document.getElementById('vehiclesDetails');
+                        const editButton = document.getElementById('editButton');
+                        const editControls = document.getElementById('editControls');
+
+                        accountTab.addEventListener('click', () => {
+                            accountDetails.classList.remove('hidden');
+                            rentedVehicleDetails.classList.add('hidden');
+                            vehiclesDetails.classList.add('hidden');
+                        });
+
+                        rentedVehicleTab.addEventListener('click', () => {
+                            rentedVehicleDetails.classList.remove('hidden');
+                            accountDetails.classList.add('hidden');
+                            vehiclesDetails.classList.add('hidden');
+                        });
+
+                        vehiclesTab.addEventListener('click', () => {
+                            vehiclesDetails.classList.remove('hidden');
+                            accountDetails.classList.add('hidden');
+                            rentedVehicleDetails.classList.add('hidden');
+                        });
+
+                        editButton.addEventListener('click', () => {
+                            editButton.classList.add('hidden');
+                            editControls.classList.remove('hidden');
+                            document.querySelectorAll('input').forEach(input => input.disabled = false);
+                        });
+
+                        document.getElementById('cancelButton').addEventListener('click', () => {
+                            editButton.classList.remove('hidden');
+                            editControls.classList.add('hidden');
+                            document.querySelectorAll('input').forEach(input => input.disabled = true);
+                        });
+
+                        document.getElementById('saveButton').addEventListener('click', () => {
+                            editButton.classList.remove('hidden');
+                            editControls.classList.add('hidden');
+                            document.querySelectorAll('input').forEach(input => input.disabled = true);
+                        });
+                    </script>
+                </body>
+                </html>
